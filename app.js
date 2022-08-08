@@ -25,3 +25,19 @@ function Divide(a,b) {
 }
 
 // console.log(Divide(10,2))
+
+function Operate(operation,firstNum,secondNum) {
+if (operation === Add) {
+    return Add(firstNum,secondNum);
+} else if (operation === Subtract) {
+    return Subtract(firstNum,secondNum);
+} else if (operation === Multiply) {
+    return Multiply(firstNum,secondNum);
+} else if (operation = Divide) {
+    return Divide(firstNum,secondNum);
+} else {
+    alert("Not Valid");
+}
+}
+
+console.log(Operate(Subtract,5,1))
