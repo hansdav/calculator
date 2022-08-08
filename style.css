@@ -1,0 +1,26 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    height: 250px;
+    width: 250px;
+    flex-direction: row;
+}
+
+.button {
+    background-color: rgb(198, 240, 240);
+    border: none;
+    color: rgb(0, 0, 0);
+    width: 78.9px;
+    height: 48.5px;
+    padding: 15px 35px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonClear {
+    height:48.5;
+    width: 157.8px;
+}
