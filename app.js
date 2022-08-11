@@ -41,3 +41,58 @@ if (operation === Add) {
 }
 
 console.log(Operate(Subtract,5,1))
+
+//this appends the numbers and operations into the display//
+const buttons = document.querySelectorAll("button#input.button");
+const display = document.getElementById("display");
+const buttonClear = document.querySelectorAll("button.buttonClear");
+
+
+// function displayAdd() {
+//     let inputKey = document.createElement("div");
+//     display.appendChild(inputKey);
+// }
+
+
+
+buttons.forEach((button) => {
+    button.addEventListener("click", function(e) {
+        // let display = document.getElementById("display");
+        let input = document.createElement("div");
+        input.textContent = e.target.textContent;
+        display.appendChild(input);
+    })
+});
+
+buttonClear.forEach(e=> e.addEventListener("click",function(e) {
+    while (display.firstChild) {
+        display.replaceChildren();
+    }
+}))
+
+
+// buttonClear.addEventListener("click", resetDis());
+
+// buttonClear.addEventListener("click", function(e) {
+//     alert ("hi");
+    // document.getElementById("display").value="";
+// })
+
+
+// function resetDis() {
+//     while (display.hasChildNodes()) {
+//         display.removeChild(display.lastChild)
+//     }
+// }
+
+// function displayAdd(e) {
+//     let input = document.createElement("div");
+//     input.textContent = e.target.textContent;
+//     display.appendChild(input);
+// }
+
+// function displayAdd() {
+//     let input = document.createElement("div");
+//         input.textContent = e.target.textContent;
+//         display.appendChild(input);
+// }

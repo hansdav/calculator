@@ -1,5 +1,21 @@
 #container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#display{
+    height: 50px;
+    width: 250px;
+    flex-wrap: wrap;
+    border: 3px outset rgb(228, 228, 228);
+    display: flex;
+    
+}
+
+#keys {
+    display: flex;
     flex-wrap: wrap;
     flex: 0 0 auto;
     height: 250px;
