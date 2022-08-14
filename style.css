@@ -6,6 +6,9 @@
 }
 
 #display{
+    color:rgb(0, 0, 0);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 50px;
     width: 250px;
     flex-wrap: wrap;
@@ -25,6 +28,7 @@
 
 .button {
     background-color: rgb(198, 240, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
     color: rgb(0, 0, 0);
     width: 78.9px;
@@ -36,7 +40,30 @@
     cursor: pointer;
 }
 
+button#operator {
+    background-color: rgb(58, 201, 130);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:none;
+    color: white;
+    width: 78.9px;
+    height: 48.5px;
+    padding: 15px 35px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 .buttonClear {
-    height:48.5;
-    width: 157.8px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: goldenrod;
+    color: whitesmoke;
+    width: 162.1px;
+    height: 48.5px;
+    padding: 15px 35px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
